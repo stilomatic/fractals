@@ -1,7 +1,7 @@
 import org.apache.commons.math3.complex.Complex;
 
-int WIDTH;// = 2890;
-int HEIGHT;// = 1024;
+int WIDTH;
+int HEIGHT;
 int ITERATIONS = 10000;
 int NUM_POINTS = 1000;
 int NUM_TRANSFORMS = 10000;
@@ -17,7 +17,7 @@ Transform [] TRANSFORM_CHOICES = {new MoebiusBase(), new InverseJulia(), new Com
 void setup(){
   //fullScreen();
   size(2000,1024);
-  PImage temp = loadImage("temp.png");
+  PImage temp = loadImage("temp_old.png");
   result = new ASImage(temp);
   WIDTH = temp.width;
   HEIGHT = temp.height;

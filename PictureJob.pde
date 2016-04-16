@@ -37,7 +37,7 @@ public class PictureJob implements Runnable {
     }
   }
   shiftBlur3x(result.source);
-  result.source.save(savePath("data/temp1.png"));
+  result.source.save(savePath("data/temp_old.png"));
 }
 
   public void stop() {
